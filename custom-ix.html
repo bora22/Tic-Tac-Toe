@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html id="htl">
+<head>
+<link rel="stylesheet" href="css/game.css"/>
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+	<link rel="stylesheet" href="css/rdbtsty.css"/>
+	<link rel="stylesheet" href="css/modal.css"/>
+	<script src="js/modal.js"></script>
+	<script src="js/index.js"></script>
+</head>
+<body id="bdy" background="image/carl_warner_food_landscape-wallpaper-1366x768.jpg">
+	<div clsss="cus-menu">
+		<div class="menu-head"><img src="image/setting.png" onclick="slideTg();"  alt="Setting">
+		</div>
+		<div id="menu"class="menu">
+			<ul>
+				<a onclick="md();"><li><img src="image/xo.png" alt="Setting"/></li></a>
+				<a onclick="paus();" id="icon"><li><img src="image/music 1.png" alt="music"/></li></a>
+			</ul>
+		</div>
+	</div>
+
+	<div id="myModal" class="modal" >
+		<div class="modal-content">
+			<div class="modal-header">
+				<div onclick="clsmd();"><span class="close" >&times;</span></div>
+				<h2>Select Your Wappen</h2>
+			</div>
+			<div class="modal-body container" onchange="chose();"id="icon1">
+				<ul>
+					<li>
+						<input type="radio" id="f-option" name="selector" value="o">
+						<label for="f-option"><b><i class="fa fa-circle-o rd" style="font-size: 40px;"></i></b></label>
+						<div class="check"></div>
+					</li>
+					<li>
+						<input type="radio" id="s-option" name="selector" value="x">
+						<label for="s-option"><b><i class="fa fa-times rd" style="font-size: 40px;"></i></b></label>
+						<div class="check"></div>
+
+					</li>
+				</ul>
+			</div>
+			<div class="modal-footer">
+				<h3></h3>
+			</div>
+		</div>
+	</div>
+	<audio  id="audio"  autoplay controls hidden >
+		<source src="tone/Background.mp3" type='audio/mp3'>
+		<source src="Background.ogg" type='audio/ogg'>
+		not support!
+	</audio>
+	<div id="tip" style="font-size:100px;"><b>TIC TAC TOE</b></div>
+	<div class="bottomright">
+	<div class="dropdown1" onmouseover="hide();" onmouseout="hide();">
+		<button ><i class="fa fa-user-md" style="font-size:27;color:black;"></i>&nbsp;&nbsp;&nbsp;&nbsp;<a>Play</a></button>
+		<div class="dropdown-content" >
+			<a href="auto.html" onclick="location.href=this.href+'?key='+l;return false;">Easy</a>
+			<a href="hard.html" onclick="location.href=this.href+'?key='+l;return false;">Hard</a>
+		</div>
+	</div>
+	</div>
+	<div><img src="image/tic-tac-toe.png" class="addon"></div>
+	<div class="bt">
+	 <div class="dropdown" id="drop2" style="display:block;">
+		<button ><i class="fa fa-users" style="font-size:25;color:black;"></i>&nbsp;<a>Two Players</a></button>
+		<div class="dropdown-content" >
+			<a href="main.html">Players War</a>
+			<a href="battel.html">BattleShip</a>
+		</div>
+		</div>
+	</div>
+</body>
+</html>

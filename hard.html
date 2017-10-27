@@ -1,0 +1,64 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/game.css"/>
+	<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+	<script src="js/hard.js"></script>
+</head>
+<body background="image/carl_warner_food_landscape-wallpaper-1366x768.jpg" onload="chose();" onclick="mov();" onmousemove="txt();">
+<div class="back-btn" ><a href="custom-ix.html" style="color:#FF6600;"><i class="fa fa-chevron-circle-left " style="font-size: 35px;" ></i></a></div>
+<header>
+	<audio  id="audio" controls hidden>
+	<source src="tone/note-high.wav" type='audio/wav'>
+	<source src="note-high.ogg" type='audio/ogg'>
+	not support!
+	</audio>
+</header>
+	<div id="dialogoverlay1"></div>
+	<div id="dialogbox1">
+		<div>
+			<div id="dialogboxbody1"></div>
+			<div id="dialogboxfoot1"></div>
+		</div>
+	</div>
+<p></p>
+<div class="div_tbl" onmouseover="show();" >
+	<div class="row-tbl">
+		<div id="a1" class="column-el" onclick="ab(this);"  onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		<div id="a2" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		<div id="a3" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+	</div>
+	<div class="row-tbl">
+		<div id="a4" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		<div id="a5" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		<div id="a6"class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+	</div>
+	<div class="row-tbl">
+		<div id="a7" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		<div id="a8" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		<div id="a9" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+	</div>
+</div>
+
+<div class="div_butn">
+	<input type="button" class="player" style="display:none" id="dm"/>
+</div>
+<div style="margin-left:-6%">
+	<b>
+		<div class="cal">
+			<div class="cal1">Player</div>
+			<div class="cal2">Draw</div>
+			<div class="cal2">Computer</div>
+		</div>
+	</b>
+	<b>
+		<div class="col">
+			<div class="col1" id="cal1"></div>
+			<div class="col2" id="cal3"></div>
+			<div class="col2" id="cal2"></div>
+		</div>
+	</b>
+</div>
+
+
+</body>
+</html>

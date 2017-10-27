@@ -1,0 +1,88 @@
+<html>
+<head>
+<link rel="stylesheet" href="css/game.css"/>
+<link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css"/>
+<script src="js/tw-battel.js"></script>
+</head>
+<body background="image/carl_warner_food_landscape-wallpaper-1366x768.jpg" onclick="mov();" onmousemove="txt();" onload="Frontvid();" >
+<div class="back-btn" ><a href="custom-ix.html" style="color:#FF6600;"><i class="fa fa-chevron-circle-left " style="font-size: 35px;" ></i></a></div>
+	<div id="dialogoverlay"></div>
+	<div id="dialogbox">
+		<div>
+			<div id="dialogboxbody"></div>
+			<div id="dialogboxfoot"></div>
+		</div>
+	</div>
+<div id="dialogoverlay2"></div>
+	<div id="dialogbox2">
+		<div>
+			<div id="dialogboxbody2"></div>
+			<div id="dialogboxfoot2"></div>
+		</div>
+	</div>
+<header>
+<audio  id="audio" controls hidden>
+<source src="tone/note-high.wav" type='audio/wav'>
+<source src="note-high.ogg" type='audio/ogg'>
+not support!
+</audio>
+<audio  id="audio2" controls hidden>
+<source src="tone/Avicii.mp3" type='audio/mp3'>
+<source src="Avicii.ogg" type='audio/ogg'>
+not support!
+</audio>
+c
+</header>
+	<div class="div_tbl" onmouseover="show();" onmousemove="overall();">
+		<div class="row-tbl">
+			<div id="a1" class="column-el" onclick="ab(this);"  onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+			<div id="a2" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+			<div id="a3" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		</div>
+		<div class="row-tbl">
+			<div id="a4" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+			<div id="a5" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+			<div id="a6"class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		</div>
+		<div class="row-tbl">
+			<div id="a7" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+			<div id="a8" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+			<div id="a9" class="column-el" onclick="ab(this);" onmouseenter="hover(this);" onmouseleave="hover2(this);"></div>
+		</div>
+	</div>
+<!--div class="div_tbl" >
+<table border="3px solid black" class="table" id="tb" style="background:#78bec5;"onmouseover="show();" onmousemove="overall();" >
+	<tr id="">
+		<td id="a1"  class="element" name="row1"style="background:#78bec5;"  onclick="ab(this);"></td>
+		<td id="a2" class="element" style="background:#78bec5;" onclick="ab(this);"  ></td>
+		<td id="a3" class="element" style="background:#78bec5;" onclick="ab(this);" ></td>
+	</tr>
+	<tr>
+		<td id="a4" class="element"style="background:#78bec5;" onclick="ab(this);"></td>
+		<td id="a5" class="element"style="background:#78bec5;" onclick="ab(this);"></td>
+		<td id="a6" class="element"style="background:#78bec5;" onclick="ab(this);" ></td>
+	</tr>
+	<tr>
+		<td id="a7" class="element"style="background:#78bec5;" onclick="ab(this);"></td>
+		<td id="a8" class="element"style="background:#78bec5;" onclick="ab(this);" ></td>
+		<td id="a9" class="element"style="background:#78bec5;" onclick="ab(this);"></td>
+	</tr>
+</table>
+</div-->
+<div class="div_butn">
+	<!--<button style="display:none" id="dm"></button>-->
+	<input type="button" class="player" style="display:none" id="dm">
+</div><b>
+<div id="cal">
+	<div class="cal1">1 Player</div>
+	<div class="cal2">Draw</div>
+	<div class="cal2">2 Player</div>
+</div></b><b>
+<div id="col">
+	<div class="col1" id="cal1"></div>
+	<div class="col2" id="cal3"></div>
+	<div class="col2" id="cal2"></div>
+</div></b>
+<!--<marquee hspace="10%" class="marq">1 Player Has 'O' And 2 Player Has 'X'</marquee>-->
+</body>
+</html>
